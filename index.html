@@ -1,0 +1,652 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thinuri Avindya</title>
+    <link rel="stylesheet" href="t.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+
+    <!-- ======= NAVBAR ======= -->
+    <nav class="navbar">
+        <div class="nav-brand">
+            <a href="#home">
+                <img class="nav-avatar" src="1.jpg" alt="TA">
+            </a>
+            <span class="nav-name">Thinuri Avindya</span>
+        </div>
+
+        <!-- CSS-only hamburger -->
+        <input type="checkbox" id="nav-check" class="nav-check">
+        <label for="nav-check" class="hamburger" aria-label="Menu">
+            <span></span><span></span><span></span>
+        </label>
+
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#career">Career</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="#login" class="nav-cta">Log In</a></li>
+        </ul>
+
+        <!-- Search bar -->
+        <div class="nav-search" id="navSearch">
+            <button class="search-toggle-btn" id="searchToggleBtn" aria-label="Toggle search">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+            <div class="search-input-wrap" id="searchInputWrap">
+                <input type="text" id="searchInput" class="search-input" placeholder="Search on this page…" autocomplete="off">
+                <button class="search-clear" id="searchClear" aria-label="Clear search">
+                    <i class="fa-solid fa-xmark"></i>
+                </button>
+            </div>
+            <div class="search-results-count" id="searchResultsCount"></div>
+        </div>
+
+        <!-- Dark/light toggle -->
+        <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme" title="Toggle dark/light mode">
+            ☀️
+        </button>
+    </nav>
+
+    <!-- ======= HERO ======= -->
+    <section class="hero" id="home">
+        <div class="hero-blob hero-blob-1"></div>
+        <div class="hero-blob hero-blob-2"></div>
+
+        <div class="hero-content">
+            <p class="eyebrow">✦ &nbsp;Portfolio &nbsp;✦</p>
+            <h1 class="hero-title">
+                Hello, I'm<br>
+                <em>Thinuri<br>Avindya</em>
+            </h1>
+            <p class="hero-desc">
+                An Information Technology student specializing in
+                <strong>Cyber Security</strong> — passionate about building practical,
+                user-friendly digital solutions that are as beautiful as they are secure.
+            </p>
+            <div class="hero-actions">
+                <a href="#contact" class="btn-primary">Get In Touch</a>
+                <a href="#career" class="btn-ghost">View Career</a>
+            </div>
+            <div class="social-row">
+                <a href="https://www.linkedin.com/in/chamath-fernando-2b41b1400/" class="social-link" aria-label="LinkedIn">
+                    <i class="fa-brands fa-linkedin-in"></i>
+                </a>
+                <a href="https://www.instagram.com/thinu.ri?igsh=ejBtam16YXkxejlo" class="social-link" aria-label="Instagram">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+            </div>
+        </div>
+
+        <div class="hero-image-wrap">
+            <div class="ring ring-outer"></div>
+            <div class="ring ring-inner"></div>
+            <img class="hero-img" src="1.jpg" alt="Thinuri Avindya">
+            <div class="hero-badge">IT · Cyber Security</div>
+        </div>
+    </section>
+
+    <!-- ======= GALLERY ======= -->
+    <section class="gallery-section">
+        <p class="eyebrow center">✦ &nbsp;Gallery &nbsp;✦</p>
+        <div class="gallery-outer">
+            <div class="gallery-track" id="galleryTrack">
+                <div class="gallery-slide" id="g1"><img src="2.jpeg" alt="slide 1"></div>
+                <div class="gallery-slide" id="g2"><img src="4.jpg" alt="slide 2"></div>
+                <div class="gallery-slide" id="g3"><img src="3.jpg" alt="slide 3"></div>
+                <div class="gallery-slide" id="g4"><img src="5.jpg" alt="slide 4"></div>
+                <div class="gallery-slide" id="g5"><img src="6.jpg" alt="slide 5"></div>
+            </div>
+            <button class="g-arrow g-prev" id="gPrev"><i class="fa-solid fa-chevron-left"></i></button>
+            <button class="g-arrow g-next" id="gNext"><i class="fa-solid fa-chevron-right"></i></button>
+        </div>
+        <div class="gallery-dots">
+            <a href="#g1" class="gdot"></a>
+            <a href="#g2" class="gdot"></a>
+            <a href="#g3" class="gdot"></a>
+            <a href="#g4" class="gdot"></a>
+            <a href="#g5" class="gdot"></a>
+        </div>
+    </section>
+
+    <!-- ======= CAREER ======= -->
+    <section class="career-section" id="career">
+        <div class="career-intro">
+            <p class="eyebrow">✦ &nbsp;Opportunities &nbsp;✦</p>
+            <h2 class="section-title">Join with us</h2>
+            <p class="section-desc">
+                Be part of a growing team that values creativity, innovation, and continuous learning.
+                We welcome passionate individuals eager to develop their skills and build meaningful
+                digital solutions — whether you're just starting out or already experienced.
+            </p>
+        </div>
+
+        <div class="apply-card">
+            <div class="apply-head">
+                <h3>Apply Now</h3>
+                <span class="tag">Open</span>
+            </div>
+            <form action="#" method="post" enctype="multipart/form-data">
+                <div class="form-grid">
+                    <div class="f-field">
+                        <label for="firstname">First Name</label>
+                        <input type="text" id="firstname" name="firstname" placeholder="Enter first name">
+                    </div>
+                    <div class="f-field">
+                        <label for="lastname">Last Name</label>
+                        <input type="text" id="lastname" name="lastname" placeholder="Enter last name">
+                    </div>
+                    <div class="f-field">
+                        <label for="dateofbirth">Date of Birth</label>
+                        <input type="date" id="dateofbirth" name="datebirth" max="2010-01-01">
+                    </div>
+                    <div class="f-field">
+                        <label for="num">Contact Number</label>
+                        <input type="tel" id="num" name="num" placeholder="Enter phone number">
+                    </div>
+                    <div class="f-field full">
+                        <label for="applyemail">Email Address</label>
+                        <input type="email" id="applyemail" name="email" placeholder="Enter email address">
+                    </div>
+                    <div class="f-field full">
+                        <label>Gender</label>
+                        <div class="radio-group">
+                            <label class="radio-opt"><input type="radio" name="gender" value="Male"> Male</label>
+                            <label class="radio-opt"><input type="radio" name="gender" value="Female"> Female</label>
+                            <label class="radio-opt"><input type="radio" name="gender" value="Another"> Other</label>
+                        </div>
+                    </div>
+                    <div class="f-field full">
+                        <label for="myfile">Upload CV / Resume</label>
+                        <div class="upload-zone">
+                            <input type="file" name="myfile" id="myfile" accept=".pdf,.doc,.docx">
+                            <i class="fa-regular fa-file-lines upload-icon"></i>
+                            <p class="upload-text">Drop your file here or <u>browse</u></p>
+                            <small>.pdf · .doc · .docx</small>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-actions">
+                    <button type="reset" class="btn-outline">Clear</button>
+                    <button type="submit" class="btn-primary">Submit Application</button>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <!-- ======= CONTACT ======= -->
+    <section class="contact-section" id="contact">
+        <div class="contact-left">
+            <p class="eyebrow">✦ &nbsp;Reach Out &nbsp;✦</p>
+            <h2 class="section-title">Let's Talk</h2>
+            <p class="section-desc">Have a project idea or just want to connect?<br>I'd love to hear from you.</p>
+            <div class="contact-info">
+                <div class="contact-detail">
+                    <div class="detail-icon"><i class="fa-regular fa-envelope"></i></div>
+                    <span>thinuri@example.com</span>
+                </div>
+                <div class="contact-detail">
+                    <div class="detail-icon"><i class="fa-solid fa-location-dot"></i></div>
+                    <span>Sri Lanka</span>
+                </div>
+            </div>
+        </div>
+        <div class="contact-right">
+            <form action="#" method="post" class="contact-form">
+                <div class="f-field">
+                    <label for="cname">Your Name</label>
+                    <input type="text" id="cname" name="name" placeholder="Enter your name">
+                </div>
+                <div class="f-field">
+                    <label for="cemail">Your Email</label>
+                    <input type="email" id="cemail" name="email" placeholder="Enter your email">
+                </div>
+                <div class="f-field">
+                    <label for="Message">Message</label>
+                    <textarea id="Message" name="Message" rows="6" placeholder="Write your message here…"></textarea>
+                </div>
+                <button type="submit" class="btn-primary full-w">
+                    Send Message &nbsp;<i class="fa-solid fa-paper-plane"></i>
+                </button>
+            </form>
+        </div>
+    </section>
+
+    <!-- ======= LOGIN ======= -->
+    <section class="login-section" id="login">
+        <div class="login-blob"></div>
+        <div class="login-card">
+            <p class="eyebrow center">✦ &nbsp;Welcome Back &nbsp;✦</p>
+            <h2 class="login-title">Sign In</h2>
+            <div class="f-field">
+                <label for="lemail">Email Address</label>
+                <input type="email" id="lemail" name="email" placeholder="Enter your email">
+            </div>
+            <div class="f-field">
+                <label for="lpass">Password</label>
+                <input type="password" id="lpass" name="password" placeholder="Enter your password">
+            </div>
+            <a href="#home"><button class="btn-primary full-w">Login</button></a>
+            <p class="login-footer">Don't have an account? <a href="#">Sign up here</a></p>
+        </div>
+    </section>
+
+    <!-- ======= FOOTER ======= -->
+    <footer class="site-footer">
+        <div class="footer-inner">
+            <div class="footer-brand">
+                <img src="1.jpg" alt="TA" class="footer-logo">
+                <span class="footer-name">Thinuri Avindya</span>
+                <p class="footer-tagline">IT Student · Cyber Security · Sri Lanka</p>
+            </div>
+           
+            <div class="footer-social-col">
+                <p class="footer-heading">Connect</p>
+                <div class="footer-socials">
+                    <a href="#" aria-label="LinkedIn">
+                        <i class="fa-brands fa-linkedin-in"></i>
+                    </a>
+                    <a href="#" aria-label="Instagram">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                </div>
+            </div>
+
+            <div class="footer-map-col">
+                <p class="footer-heading">Location</p>
+                <div class="footer-map">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d126743.62795259398!2d79.7861416!3d6.9218374!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae253d10f7a7003%3A0x320b2e4d32d3838d!2sColombo%2C%20Sri%20Lanka!5e0!3m2!1sen!2slk!4v1700000000000!5m2!1sen!2slk"
+                        width="100%" height="160" style="border:0;" allowfullscreen=""
+                        loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+                        title="Sri Lanka Map">
+                    </iframe>
+                </div>
+                <p class="footer-location-label"><i class="fa-solid fa-location-dot"></i> Colombo, Sri Lanka</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2025 <strong>Thinuri Avindya</strong> · Crafted with passion</p>
+        </div>
+    </footer>
+
+    <!-- Scroll-to-top (CSS scroll-driven) -->
+    <a href="#home" class="scroll-top" aria-label="Back to top">
+        <i class="fa-solid fa-arrow-up"></i>
+    </a>
+
+    <!-- ======= CHATBOT ======= -->
+    <div class="chatbot-wrapper" id="chatbotWrapper">
+        <div class="chatbot-box" id="chatbotBox">
+            <div class="chatbot-header">
+                <div class="chatbot-header-info">
+                    <div class="chatbot-avatar"><i class="fa-solid fa-robot"></i></div>
+                    <div>
+                        <p class="chatbot-name">Thinuri's Assistant</p>
+                        <span class="chatbot-status"><span class="status-dot"></span>Online</span>
+                    </div>
+                </div>
+                <button class="chatbot-close" id="chatbotClose" aria-label="Close chat">
+                    <i class="fa-solid fa-xmark"></i>
+                </button>
+            </div>
+            <div class="chatbot-messages" id="chatbotMessages">
+                <div class="chat-msg bot">
+                    <div class="chat-bubble">
+                        Hi there! 👋 I'm Thinuri's AI assistant. Ask me anything about her background, skills, or how to get in touch!
+                    </div>
+                </div>
+            </div>
+            <div class="chatbot-input-row">
+                <input type="text" id="chatbotInput" class="chatbot-input" placeholder="Type your message…" autocomplete="off">
+                <button class="chatbot-send" id="chatbotSend" aria-label="Send">
+                    <i class="fa-solid fa-paper-plane"></i>
+                </button>
+            </div>
+        </div>
+        <button class="chatbot-fab" id="chatbotFab" aria-label="Open chat assistant">
+            <i class="fa-solid fa-comment-dots chatbot-fab-icon" id="chatFabIcon"></i>
+            <span class="chatbot-badge" id="chatBadge">1</span>
+        </button>
+    </div>
+
+    <script>
+        // ===== THEME TOGGLE =====
+        const toggle = document.getElementById('themeToggle');
+        const html = document.documentElement;
+        const saved = localStorage.getItem('theme') || 'light';
+        html.setAttribute('data-theme', saved);
+        toggle.textContent = saved === 'dark' ? '🌙' : '☀️';
+        toggle.addEventListener('click', () => {
+            const next = html.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
+            html.setAttribute('data-theme', next);
+            toggle.textContent = next === 'dark' ? '🌙' : '☀️';
+            localStorage.setItem('theme', next);
+        });
+
+        // ===== GALLERY ARROWS + AUTO-SLIDE =====
+        const track = document.getElementById('galleryTrack');
+        let idx = 0;
+        const total = 5;
+        let autoSlideTimer = null;
+
+        function goToSlide(n) {
+            idx = (n + total) % total;
+            track.scrollTo({ left: idx * track.offsetWidth, behavior: 'smooth' });
+            updateDots();
+        }
+
+        function updateDots() {
+            document.querySelectorAll('.gdot').forEach((dot, i) => {
+                dot.classList.toggle('active', i === idx);
+            });
+        }
+
+        function startAutoSlide() {
+            autoSlideTimer = setInterval(() => goToSlide(idx + 1), 3500);
+        }
+
+        function resetAutoSlide() {
+            clearInterval(autoSlideTimer);
+            startAutoSlide();
+        }
+
+        document.getElementById('gPrev').addEventListener('click', () => { goToSlide(idx - 1); resetAutoSlide(); });
+        document.getElementById('gNext').addEventListener('click', () => { goToSlide(idx + 1); resetAutoSlide(); });
+        track.addEventListener('touchstart', resetAutoSlide, { passive: true });
+        startAutoSlide();
+        updateDots();
+
+        // ===== SEARCH BAR =====
+        const searchToggleBtn = document.getElementById('searchToggleBtn');
+        const searchInputWrap = document.getElementById('searchInputWrap');
+        const searchInput = document.getElementById('searchInput');
+        const searchClear = document.getElementById('searchClear');
+        const searchResultsCount = document.getElementById('searchResultsCount');
+        let searchOpen = false;
+        let highlightedNodes = [];
+
+        searchToggleBtn.addEventListener('click', () => {
+            searchOpen = !searchOpen;
+            searchInputWrap.classList.toggle('active', searchOpen);
+            if (searchOpen) {
+                searchInput.focus();
+            } else {
+                clearSearch();
+            }
+        });
+
+        searchClear.addEventListener('click', () => {
+            searchInput.value = '';
+            clearSearch();
+            searchInput.focus();
+        });
+
+        searchInput.addEventListener('input', () => {
+            const query = searchInput.value.trim();
+            clearHighlights();
+            if (query.length < 2) {
+                searchResultsCount.textContent = '';
+                return;
+            }
+            const count = highlightText(document.body, query);
+            searchResultsCount.textContent = count > 0 ? `${count} match${count > 1 ? 'es' : ''}` : 'No matches';
+            if (count > 0) {
+                const firstMark = document.querySelector('mark.search-highlight');
+                if (firstMark) firstMark.scrollIntoView({ behavior: 'smooth', block: 'center' });
+            }
+        });
+
+        searchInput.addEventListener('keydown', e => {
+            if (e.key === 'Escape') {
+                searchOpen = false;
+                searchInputWrap.classList.remove('active');
+                clearSearch();
+            }
+        });
+
+        function clearSearch() {
+            clearHighlights();
+            searchInput.value = '';
+            searchResultsCount.textContent = '';
+        }
+
+        function clearHighlights() {
+            document.querySelectorAll('mark.search-highlight').forEach(mark => {
+                const parent = mark.parentNode;
+                parent.replaceChild(document.createTextNode(mark.textContent), mark);
+                parent.normalize();
+            });
+        }
+
+        function highlightText(node, query) {
+            const skipTags = new Set(['SCRIPT', 'STYLE', 'NOSCRIPT', 'TEXTAREA', 'INPUT', 'MARK', 'NAV', 'FOOTER']);
+            let count = 0;
+            const regex = new RegExp(`(${query.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')})`, 'gi');
+
+            function walk(node) {
+                if (node.nodeType === Node.TEXT_NODE) {
+                    const text = node.textContent;
+                    if (!regex.test(text)) return;
+                    regex.lastIndex = 0;
+                    const frag = document.createDocumentFragment();
+                    let lastIndex = 0;
+                    let match;
+                    regex.lastIndex = 0;
+                    while ((match = regex.exec(text)) !== null) {
+                        if (match.index > lastIndex) {
+                            frag.appendChild(document.createTextNode(text.slice(lastIndex, match.index)));
+                        }
+                        const mark = document.createElement('mark');
+                        mark.className = 'search-highlight';
+                        mark.textContent = match[0];
+                        frag.appendChild(mark);
+                        count++;
+                        lastIndex = regex.lastIndex;
+                    }
+                    if (lastIndex < text.length) {
+                        frag.appendChild(document.createTextNode(text.slice(lastIndex)));
+                    }
+                    node.parentNode.replaceChild(frag, node);
+                } else if (node.nodeType === Node.ELEMENT_NODE && !skipTags.has(node.tagName)) {
+                    Array.from(node.childNodes).forEach(walk);
+                }
+            }
+            walk(node);
+            return count;
+        }
+
+        // ===== CHATBOT =====
+        const fab = document.getElementById('chatbotFab');
+        const box = document.getElementById('chatbotBox');
+        const closeBtn = document.getElementById('chatbotClose');
+        const sendBtn = document.getElementById('chatbotSend');
+        const inputEl = document.getElementById('chatbotInput');
+        const messagesEl = document.getElementById('chatbotMessages');
+        const badge = document.getElementById('chatBadge');
+        const fabIcon = document.getElementById('chatFabIcon');
+        let isOpen = false;
+        let conversationHistory = [];
+
+        // Quick reply options — each has a section to scroll to on the page
+        const quickReplies = [
+            { label: '👩‍💻 About Thinuri',  value: 'Tell me about Thinuri Avindya',                  section: '#home'    },
+            { label: '🔐 Cyber Security',   value: 'What does Thinuri study in Cyber Security?',       section: '#home'    },
+            { label: '📬 Contact Info',     value: 'How can I contact Thinuri?',                       section: '#contact' },
+            { label: '💼 Career / Apply',   value: 'How can I apply or join the team?',                section: '#career'  },
+            { label: '🖼️ Gallery',          value: 'Tell me about the gallery section',                section: null       },
+        ];
+
+        // Keywords that indicate the question is on-topic for this portfolio
+        const onTopicKeywords = [
+            'thinuri','avindya','about','cyber','security','contact','email','reach','gallery',
+            'career','apply','application','job','portfolio','skills','it','study','university',
+            'instagram','linkedin','social','location','sri lanka','colombo','project','digital',
+            'website','developer','design','intern','hire','background','experience','who','what',
+            'how','where','join','team','photo','image','slide','picture'
+        ];
+
+        function isOnTopic(text) {
+            const lower = text.toLowerCase();
+            return onTopicKeywords.some(kw => lower.includes(kw));
+        }
+
+        function scrollToSection(sectionId) {
+            if (!sectionId) return;
+            const el = document.querySelector(sectionId);
+            if (el) {
+                // Close chat briefly so section is visible, then re-open
+                setTimeout(() => {
+                    el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                }, 300);
+            }
+        }
+
+        function toggleChat() {
+            isOpen = !isOpen;
+            box.classList.toggle('open', isOpen);
+            badge.style.display = 'none';
+            fabIcon.className = isOpen ? 'fa-solid fa-xmark chatbot-fab-icon' : 'fa-solid fa-comment-dots chatbot-fab-icon';
+            if (isOpen && messagesEl.children.length === 1) {
+                setTimeout(showQuickReplies, 400);
+            }
+        }
+        fab.addEventListener('click', toggleChat);
+        closeBtn.addEventListener('click', toggleChat);
+
+        function appendMsg(text, role) {
+            const div = document.createElement('div');
+            div.className = `chat-msg ${role}`;
+            const bubble = document.createElement('div');
+            bubble.className = 'chat-bubble';
+            bubble.textContent = text;
+            div.appendChild(bubble);
+            messagesEl.appendChild(div);
+            messagesEl.scrollTop = messagesEl.scrollHeight;
+        }
+
+        // Append a bot message with an inline "Contact Us" button
+        function appendContactPrompt() {
+            const div = document.createElement('div');
+            div.className = 'chat-msg bot';
+            div.innerHTML = `
+                <div class="chat-bubble">
+                    I'm only able to answer questions about Thinuri's portfolio, skills, career, or contact details.
+                    For anything else, please reach out directly! 😊
+                    <br><br>
+                    <a href="#contact" class="chat-contact-btn" onclick="document.querySelector('#contact').scrollIntoView({behavior:'smooth'});return false;">
+                        📬 Go to Contact Us
+                    </a>
+                </div>`;
+            messagesEl.appendChild(div);
+            messagesEl.scrollTop = messagesEl.scrollHeight;
+        }
+
+        function showQuickReplies() {
+            document.querySelectorAll('.quick-replies-row').forEach(el => el.remove());
+            const row = document.createElement('div');
+            row.className = 'quick-replies-row';
+            quickReplies.forEach(qr => {
+                const btn = document.createElement('button');
+                btn.className = 'quick-reply-btn';
+                btn.textContent = qr.label;
+                btn.addEventListener('click', () => {
+                    row.remove();
+                    appendMsg(qr.label, 'user');
+                    conversationHistory.push({ role: 'user', content: qr.value });
+                    // Scroll page to the relevant section
+                    scrollToSection(qr.section);
+                    showTyping();
+                    callClaude(qr.value);
+                });
+                row.appendChild(btn);
+            });
+            messagesEl.appendChild(row);
+            messagesEl.scrollTop = messagesEl.scrollHeight;
+        }
+
+        function showTyping() {
+            const div = document.createElement('div');
+            div.className = 'chat-msg bot typing-wrap';
+            div.id = 'typingIndicator';
+            div.innerHTML = '<div class="chat-bubble typing"><span></span><span></span><span></span></div>';
+            messagesEl.appendChild(div);
+            messagesEl.scrollTop = messagesEl.scrollHeight;
+        }
+        function removeTyping() {
+            const t = document.getElementById('typingIndicator');
+            if (t) t.remove();
+        }
+
+        async function callClaude(userText) {
+            const systemPrompt = `You are a friendly AI assistant embedded on Thinuri Avindya's personal portfolio website. Thinuri is an Information Technology student specializing in Cyber Security based in Sri Lanka. She is passionate about building practical, user-friendly digital solutions that are secure and beautiful. Her portfolio includes: a Hero/About section, a Gallery, a Career/Apply section with an application form, and a Contact section with email thinuri@example.com and location Sri Lanka. She is active on LinkedIn and Instagram.
+
+IMPORTANT RULES:
+- Only answer questions directly related to Thinuri's portfolio, background, skills, cyber security studies, gallery, career opportunities, or contact information.
+- If a question is unrelated to the above topics, do NOT attempt to answer it. Instead respond with exactly this message: "CONTACT_REDIRECT"
+- Keep answers concise, warm, and helpful (2-4 sentences max).`;
+
+            try {
+                const res = await fetch('https://api.anthropic.com/v1/messages', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({
+                        model: 'claude-sonnet-4-20250514',
+                        max_tokens: 300,
+                        system: systemPrompt,
+                        messages: conversationHistory
+                    })
+                });
+                const data = await res.json();
+                removeTyping();
+                const reply = data.content?.[0]?.text || "Sorry, I couldn't get a response right now.";
+
+                if (reply.trim() === 'CONTACT_REDIRECT') {
+                    appendContactPrompt();
+                } else {
+                    conversationHistory.push({ role: 'assistant', content: reply });
+                    appendMsg(reply, 'bot');
+                }
+                setTimeout(showQuickReplies, 200);
+            } catch (e) {
+                removeTyping();
+                appendMsg("Oops! Something went wrong. Please try again.", 'bot');
+            }
+        }
+
+        async function sendMessage() {
+            const text = inputEl.value.trim();
+            if (!text) return;
+            document.querySelectorAll('.quick-replies-row').forEach(el => el.remove());
+            appendMsg(text, 'user');
+            inputEl.value = '';
+
+            // Client-side off-topic check for speed
+            if (!isOnTopic(text)) {
+                appendContactPrompt();
+                setTimeout(showQuickReplies, 200);
+                return;
+            }
+
+            conversationHistory.push({ role: 'user', content: text });
+            showTyping();
+            await callClaude(text);
+        }
+
+        sendBtn.addEventListener('click', sendMessage);
+        inputEl.addEventListener('keydown', e => { if (e.key === 'Enter') sendMessage(); });
+
+        // ===== SCROLL REVEAL =====
+        const io = new IntersectionObserver(entries =>
+            entries.forEach(e => e.isIntersecting && e.target.classList.add('in-view')),
+            { threshold: 0.1 }
+        );
+        document.querySelectorAll('.reveal').forEach(el => io.observe(el));
+    </script>
+</body>
+</html>
